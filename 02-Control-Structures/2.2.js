@@ -1,10 +1,11 @@
 const readlineSync = require("readline-sync");
-let numberOne = readlineSync.question("Can you give me your age please ");
-let numberTwo = readlineSync.question("Can you give me your age please ");
-let numberThree = readlineSync.question("Can you give me your age please ");
+console.log("Can you give me three numbers please.");
+let numberOne = readlineSync.question("Number one ");
+let numberTwo = readlineSync.question("Number two ");
+let numberThree = readlineSync.question("Number three ");
 
-if (userAge >= 18){
-  console.log("You probably are an adult");
-} else {
-  console.log("You probably are a child");
+if ((numberThree > numberOne) && (numberThree < numberTwo)){
+  console.log(numberThree);
+} else if (numberOne > numberTwo) {
+  console.log("The first number has to be smaller then the second one!");
 }
