@@ -15,7 +15,7 @@ for (i=1; i<=100; i++) {
 
 
 console.log("Bonus Oneven nummers tot 100 (loop 50)");
-for (i=1; i<=100; i++) {
+for (i=1; i<=50; i++) {
     if(i%2 === 0)continue;
         console.log(i);
 }
